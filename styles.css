@@ -1,0 +1,163 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fbfd;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 30px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e1e8ed;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+main {
+    flex: 1;
+}
+
+#caracteristicas {
+    padding: 20px;
+}
+
+#acceso {
+    padding: 20px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+header h1 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #0056b3;
+    color: #e1e8ed;
+    border-radius: 10%;
+}
+
+.faq-section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.accordion-link {
+    display: block;
+    padding: 15px;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.accordion-content:target {
+    display: block;
+}
+
+.close-accordion {
+    display: inline-block;
+    margin-top: 10px;
+    color: #dc2626;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+footer {
+    text-align: center;
+}
+
+/* About.html */
+.team-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.team-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #e1e8ed;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.team-card h3 {
+    color: #0056b3; 
+    margin-top: 0;
+}
+
+.team-grid {
+    display: grid; 
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Responsive */
+/* Mobile */
+@media (min-width: 375px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    .faq-section {
+        margin: 10px auto;
+        padding: 20px;
+    }
+}
+
+/* Laptop */
+@media (min-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroERP - Inicio</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>MicroERP: Sistema de gestión para farmacias independientes</h1>
+        <nav>
+            <ul>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="about.html">Sobre el equipo</a></li>
+                <li><a href="#acceso">Acceder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="caracteristicas">
+            <h2>Control total de tu inventario</h2>
+            <p>MicroERP centraliza la operación diaria para reducir errores en tu farmacia.</p>
+            
+            <img src="assets/Page.png" alt="Diseño de la página principal compartida de la farmacia, mostrando una barra de búsqueda, categorías destacadas de salud y una lista de productos con descuentos">
+
+            <article>
+                <h3>Alertas automáticas</h3>
+                <p>Recibe notificaciones cuando un medicamento está próximo a agotarse o vencer.</p>
+            </article>
+        </section>
+
+        <section id="acceso">
+            <h2>Ingreso al Sistema</h2>
+            <form action="/login" method="POST">
+                <div>
+                    <label for="user_email">Correo Electrónico:</label>
+                    <input type="email" id="user_email" name="email" required>
+                </div>
+                <div>
+                    <label for="user_password">Contraseña:</label>
+                    <input type="password" id="user_password" name="password" required>
+                </div>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </section>
+        <section id="faq" class="faq-section">
+            <h2>Preguntas Frecuentes</h2>
+            
+            <article class="accordion-item">
+                <a href="#respuesta1" class="accordion-link">¿Qué es MicroERP?</a>
+                <div id="respuesta1" class="accordion-content">
+                    <p>Es un sistema para gestionar inventarios y ventas en farmacias pequeñas.</p>
+                    <a href="#faq" class="close-accordion">Cerrar</a>
+                </div>
+            </article>
+            
+            <article class="accordion-item">
+                <a href="#respuesta2" class="accordion-link">¿Necesito instalar algo?</a>
+                <div id="respuesta2" class="accordion-content">
+                    <p>No, funciona 100% en la nube a través de tu navegador web.</p>
+                    <a href="#faq" class="close-accordion">Cerrar</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ingeniería Informática - Univesidad de la Sabana</p>
+    </footer>
+
+</body>
+</html>
